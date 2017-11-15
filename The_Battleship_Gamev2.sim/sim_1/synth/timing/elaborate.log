@@ -1,0 +1,15 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2b69ea2dd1f44747a1221f1425f5f686 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot TesterFor_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.TesterFor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+INFO: [XSIM 43-4009] "t", written at line 39 in file "D:/Users/TEMP/Desktop/The_Battleship_Game/The_Battleship_Game.srcs/sources_1/new/Translator.sv", has also been read in this always_comb/always_latch block and is not added to the sensitivity list.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Translator
+Compiling module xil_defaultlib.TesterFor
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot TesterFor_time_synth

@@ -1,0 +1,369 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed May 10 23:17:28 2017
+# Process ID: 4140
+# Log file: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.xpr
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ButtonDebouncer.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ButtonDebouncer.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+refresh_hw_server {localhost}
+open_hw_target {localhost/xilinx_tcf/Digilent/210183A27EF4A}
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/RGBLighter.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/RGBLighter.sv
+update_compile_order -fileset sources_1
+close_hw
+update_compile_order -fileset sources_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/Test.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/Test.sv
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+update_compile_order -fileset sources_1
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/TranslateDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/TranslateDivider.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SignalDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SignalDivider.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv
+update_compile_order -fileset sources_1
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv
+remove_files -fileset sim_1 D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sim_1/new/Ramtest.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sim_1/new/Ramtest.sv
+update_compile_order -fileset sim_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+update_compile_order -fileset sources_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

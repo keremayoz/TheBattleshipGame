@@ -1,0 +1,786 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed May 10 23:17:28 2017
+# Process ID: 4140
+# Log file: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ButtonDebouncer.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ButtonDebouncer.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:44:54 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Wed May 10 23:44:54 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+refresh_hw_server {localhost}
+open_hw_target {localhost/xilinx_tcf/Digilent/210183A27EF4A}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27EF4A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:52:18 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Wed May 10 23:52:18 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:52:52 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Wed May 10 23:52:52 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:56:57 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Wed May 10 23:56:57 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:02:30 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:02:30 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:07:09 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:07:09 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:07:22 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:07:22 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:09:44 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:09:44 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:12:58 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:12:58 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:16:29 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:16:29 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:24:04 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:24:04 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:25:08 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:25:08 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:26:13 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:26:13 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:29:57 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:29:57 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:33:41 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:33:41 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:36:30 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:36:30 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:42:45 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:42:45 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:45:59 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:45:59 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:50:58 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:50:58 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:58:42 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 00:58:42 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:01:58 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:01:58 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:08:10 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:08:10 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:14:29 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:14:29 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 847.238 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27EF4A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/RGBLighter.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/RGBLighter.sv
+update_compile_order -fileset sources_1
+close_hw
+update_compile_order -fileset sources_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/Test.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/Test.sv
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+update_compile_order -fileset sources_1
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+WARNING: [filemgmt 56-12] File 'D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv' cannot be added to the project because it already exists in the project, skipping this file
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/TranslateDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/TranslateDivider.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/ClockDivider.sv
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:37:11 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:37:11 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 847.238 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27EF4A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SignalDivider.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SignalDivider.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:47:45 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:47:45 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:52:16 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:52:16 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 01:57:20 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 01:57:20 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+close [ open D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv
+update_compile_order -fileset sources_1
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:02:05 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:02:05 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:05:03 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:05:03 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:08:37 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:08:37 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:12:35 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:12:35 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:17:25 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:17:25 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:20:22 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:20:22 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 851.039 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27EF4A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:23:50 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:23:50 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:28:59 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:28:59 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:32:00 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:32:00 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:35:03 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:35:03 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:39:58 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:39:58 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:42:11 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:42:11 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:44:18 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:44:18 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:45:49 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:45:49 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:52:35 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 02:52:35 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:04:38 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 03:04:38 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/SyncButton.sv
+remove_files -fileset sim_1 D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sim_1/new/Ramtest.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sim_1/new/Ramtest.sv
+update_compile_order -fileset sim_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 855.262 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27EF4A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:09:58 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 03:09:58 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:19:09 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 03:19:09 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+remove_files D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv
+file delete -force D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.srcs/sources_1/new/BoardGenerator.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:25:13 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/synth_1/runme.log
+[Thu May 11 03:25:13 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS/Desktop/The_Battleship_Gamev2/The_Battleship_Gamev2.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 11 03:33:46 2017...

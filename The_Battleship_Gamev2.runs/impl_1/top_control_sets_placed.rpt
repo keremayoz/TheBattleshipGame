@@ -1,0 +1,71 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Thu May 11 03:26:32 2017
+| Host         : EALAB01 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    18 |
+| Minimum Number of register sites lost to control set restrictions |    62 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             783 |          188 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             455 |          142 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              52 |           18 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-----------------+---------------------------------------------+------------------+----------------+
+|          Clock Signal         |  Enable Signal  |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++-------------------------------+-----------------+---------------------------------------------+------------------+----------------+
+|  screenOne/f                  |                 |                                             |                1 |              1 |
+|  screenTwo/f                  |                 |                                             |                1 |              1 |
+|  bb/kk3/bout_reg_i_1__2_n_0   |                 |                                             |                1 |              3 |
+|  bb/kk2/bout_reg_i_1__1_n_0   |                 |                                             |                1 |              3 |
+|  bb/kk1/bout_reg_i_1__0_n_0   |                 |                                             |                1 |              3 |
+|  bb/kk0/bout_reg_i_1_n_0      |                 |                                             |                1 |              3 |
+| ~clk_IBUF_BUFG                |                 |                                             |                2 |              4 |
+| ~screenOne/f                  |                 |                                             |                4 |              7 |
+| ~screenTwo/f                  |                 |                                             |                4 |              7 |
+|  clk_IBUF_BUFG                |                 | reset_reg_n_0                               |                3 |              8 |
+|  attack_IBUF_BUFG             | bb/def2mem[0]   | at2mem[127]_i_1_n_0                         |               10 |             20 |
+| ~screenOne/f                  |                 | sss/screenOne/clockDivider/i[31]_i_1_n_0    |                8 |             31 |
+| ~screenTwo/f                  |                 | sss/screenTwo/clockDivider/i[31]_i_1__0_n_0 |                8 |             31 |
+|  attack_IBUF_BUFG             | cont[0]_i_1_n_0 | at2mem[127]_i_1_n_0                         |                8 |             32 |
+|  attack_IBUF_BUFG             |                 |                                             |               17 |             65 |
+|  clk_IBUF_BUFG                |                 |                                             |               68 |            302 |
+|  sss/translateDivider/clk_out |                 |                                             |               87 |            384 |
+|  attack_IBUF_BUFG             |                 | at2mem[127]_i_1_n_0                         |              123 |            385 |
++-------------------------------+-----------------+---------------------------------------------+------------------+----------------+
+
+
