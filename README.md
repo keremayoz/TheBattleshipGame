@@ -34,13 +34,14 @@ Clarification of Inputs and Outputs
 
 Buttons Block
 ---------
-This block's function is to avoid unsynchronized button inputs 	and by using synchronized left, right, up, down, and attack button to 	arrange the coordinate and attack battlefield area.
+		This block's function is to avoid unsynchronized button inputs 	and by using synchronized left, right, up, down, and attack button to 	arrange the coordinate and attack battlefield area.
+
 		SyncButton Module
-		****
+		
 				This module takes “clk”, “rst”, “bin” inputs and outputs bout and has an FSM which for synchronization. “clk” is Basys3's clock, rst is a reset input for FSM which arranges 
 			synchronization of button input which is “bin”.
 		Buttons Module
-		*****
+		
 				This module takes “clk”, “left”, “right”, “reset”, “up”, “down”, “attack” and gives outputs “xCor” and “yCor” vectors. This module's function is to synchronize
 			buttons and with these synchronized buttons it arranges x and y coordinates of where user bombs on the battlefield. “clk” is Basys3's clock, “left” is left push 
 			button on Basys3, “right” is right push button on Basys3, “up” is up push button on Basys3, “down” is down push button on Basys3, “attack” is middle push button on Basys3 
@@ -50,17 +51,18 @@ This block's function is to avoid unsynchronized button inputs 	and by using syn
 RGB Lighter Block
 --------
 		Translate Divider
-		******
+
 			This module takes input “clk_in” and gives output “clk_out”. “clk_in” Basys3's clock and “clk_out is” divided clock such that its frequency is greater than stcp and less than Basys3's 
 			clock to translate data before displaying.
 		
 		Translator
-		****
+		
 			This module takes input “board”, “clk” and gives output “actual”. “clk” is Basys3's clock. “board” is 128 bits input logic that encoded for 64 dots matrix with colors. We encoded colors 
 			into 2 bits: 00 for green, 01 for red, 10 for purple and 11 for blue.
 		This module's function is to take 128 bit inputs as “board” and it converts it to RGB vector matrix format which is actual as 24x8 matrix.
+
 		RGB
-		****
+		
 			This module takes “clk”, “board” inputs and gives rowsOut, SHCP,STCP, mr, oe, DS outputs. “clk” is Basys3's clock. This module's function is to light the 8x8 dot matrix light up.
 		”board” is 24x8 encoded input which is translated. DS is the 1 bit data that shifted 24 times.
 
